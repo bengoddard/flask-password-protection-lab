@@ -9,7 +9,7 @@ from models import User, UserSchema
 class ClearSession(Resource):
 
     def delete(self):
-    
+
         session['page_views'] = None
         session['user_id'] = None
 
